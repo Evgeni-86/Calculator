@@ -1,0 +1,74 @@
+html, body {
+    height: 100vh;
+    width: 100vw;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+div.conteiner_main {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+
+main.conteiner_grid {
+    height: calc( (55vh + 55vw)/2 );
+    width: calc( (45vh + 45vw)/2 );
+    display: grid;
+    grid-template: repeat(5, 1fr) / repeat(4, 1fr);
+    background-color: #444;
+    gap: calc( (2vh + 2vw)/2 );
+    padding: calc( (2vh + 2vw)/2 );
+}
+
+main.conteiner_grid div {
+    border-radius: calc( (10vh + 10vw)/2 );
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #222;
+}
+
+main.conteiner_grid div.operators {
+    color: blueviolet;
+    font-size: calc( (4vh + 4vw)/2 );
+    font-weight: bold;
+}
+
+main.conteiner_grid div.sumbols {
+    font-size: calc( (4vh + 4vw)/2 );
+    color: #fff;
+}
+
+#tablo {
+    width: calc( (45vh + 45vw)/2 );
+    background: #444;
+
+    border: calc((2vh + 2vw)/2) solid #444;
+    box-shadow: inset 0px calc( ((0.4vh + 0.4vw)/2)*-1 ) 0px 0px #aaa;
+}
+
+#tablo div.lastNumber_tablo {
+    color: #fff;
+    font-size: calc( (6vh + 6vw)/2 );
+    text-align: right;
+}
+
+#tablo div.number_tablo {
+    font-size: calc( (5vh + 5vw)/2 );
+    text-align: right;
+}
+
+#clearButton {
+    color: red;
+}
